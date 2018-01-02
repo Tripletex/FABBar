@@ -1,0 +1,35 @@
+$primary-theme-color: #db4437;
+$secondary-theme-color: white;
+
+
+@import "core";
+@import "menu";
+@import "toolbar";
+
+
+//
+// Position of the FAB Bar.
+// Feel free to use your own style classes and position it however you want
+// Take care that toolbar and menu both opens at bottom right!
+
+.tlx-fab-bar {
+  &.upperLeft {
+    top: 24px;
+    left: 24px;
+  }
+
+  &.upperRight {
+    top: 24px;
+    right: 24px;
+  }
+
+  &.lowerLeft {
+    bottom: 24px;
+    left: 24px;
+  }
+
+  &.lowerRight {
+    bottom: 24px;
+    right: 24px;
+  }
+}

@@ -1,0 +1,57 @@
+
+// link-container
+.tlx-fab-bar--menu .tlx-fab-bar--link-container {
+  display: block;
+  clip-path: circle(0 at center);
+  transition: clip-path 0.25s;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.2);
+}
+
+.tlx-fab-bar--menu.tlx-fab-bar--open.tlx-fab-bar--primaryActive .tlx-fab-bar--link-container {
+  clip-path: circle(200px at center);
+}
+
+// buttons inside menu
+
+.tlx-fab-bar--menu .tlx-material-fab-button.primary {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transition: top 0.2s, bottom 0.2s, left 0.2s, right 0.2s;
+
+  .tlx-fab-bar--label {
+    display: none;
+  }
+}
+
+.tlx-fab-bar--menu.tlx-fab-bar--open .tlx-material-fab-button.primary {
+  right: 50px;
+  bottom: 50px;
+}
+
+
+.tlx-fab-bar.tlx-fab-bar--menu .tlx-material-fab-button.secondary {
+  background-color: white;
+  z-index: -1;
+  height: 56px;
+  width: auto;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  color: black;
+  justify-content: flex-start;
+  padding-right: 16px;
+  opacity: 1;
+  transition: none;
+  transform: none;
+
+  &:last-child {
+    background-color: $primary-theme-color;
+    color: white;
+  }
+}
+
+.tlx-fab-bar--menu .tlx-fab-bar--icon {
+  display: inline-block;
+  padding: 16px;
+}
