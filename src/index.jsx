@@ -91,7 +91,7 @@ class FABBarModal extends React.Component {
     const openClose = this.openClose.bind(this);
     const props = this.props;
     const orientation = props.direction === 'up' || props.direction === 'down' ? 'vertical' : 'horizontal';
-    const primaryAction = props.primaryAction || props.alwaysOpen || props.openOnHover;
+    const primaryAction = props.primaryAction !== undefined ? props.primaryAction : props.alwaysOpen || props.openOnHover;
     const primary = primaryAction ? props.actions[0] : {};
     const staticLabels = this.props.direction === 'menu';
 
@@ -120,7 +120,7 @@ class FABBarModal extends React.Component {
              props.openOnHover && !props.alwaysOpen ? openClose : undefined
            }>
 
-        <FAB icon={this.state.primaryActive || props.alwaysOpen ? primary.icon : 'close' }
+        <FAB icon={this.state.primaryActive && props.alwaysOpen ? primary.icon : 'close' }
              href={primary.url}
              target={primary.target}
              label={primary.label || props.label}
