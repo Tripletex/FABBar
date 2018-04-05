@@ -109,6 +109,7 @@ class FABBarModal extends React.Component {
     return (
       [this.props.isModal ? <div class={'tlx-fab-bar-overlay tlx-fab-bar-overlay' + (this.state.open ? '--open' : '--closed')} onClick={openClose}></div> : null,
       <div className={classes}
+		   style={this.props.style}
            role="toolbar"
            aria-expanded={this.state.open}
            aria-orientation={orientation}
