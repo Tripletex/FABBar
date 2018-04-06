@@ -85,7 +85,7 @@ function FAB(_ref) {
     ),
     staticLabel ? React.createElement(
       'span',
-      { 'class': 'tlx-fab-bar--label' },
+      { className: 'tlx-fab-bar--label' },
       label
     ) : null
   );
@@ -162,7 +162,7 @@ var FABBarModal = function (_React$Component) {
       // For making animations betterish
       this.state.primaryActive ? 'tlx-fab-bar--primaryActive' : '', props.className].join(' ');
 
-      return [this.props.isModal ? React.createElement('div', { 'class': 'tlx-fab-bar-overlay tlx-fab-bar-overlay' + (this.state.open ? '--open' : '--closed'), onClick: openClose }) : null, React.createElement(
+      return [this.props.isModal ? React.createElement('div', { className: 'tlx-fab-bar-overlay tlx-fab-bar-overlay' + (this.state.open ? '--open' : '--closed'), onClick: openClose }) : null, React.createElement(
         'div',
         { className: classes,
           style: this.props.style,
