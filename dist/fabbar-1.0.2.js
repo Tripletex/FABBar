@@ -165,6 +165,7 @@ var FABBarModal = function (_React$Component) {
       return [this.props.isModal ? React.createElement('div', { className: 'tlx-fab-bar-overlay tlx-fab-bar-overlay' + (this.state.open ? '--open' : '--closed'), onClick: openClose }) : null, React.createElement(
         'div',
         { className: classes,
+          style: this.props.style,
           role: 'toolbar',
           'aria-expanded': this.state.open,
           'aria-orientation': orientation,
@@ -247,4 +248,4 @@ var FABBar = function (_React$Component2) {
 return FABBar;
 }));
 
-//# sourceMappingURL=fabbar-1.0.1.js.map
+//# sourceMappingURL=fabbar-1.0.2.js.map

@@ -1,8 +1,8 @@
 {
   "name": "fabbar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A FAB button in React with Speed dial, Toolbar or Menu",
-  "main": "dist/fabbar-1.0.1.js",
+  "main": "dist/fabbar-1.0.2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
