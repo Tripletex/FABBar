@@ -48,7 +48,7 @@ function FAB({style, onClick, href, target = '', icon, label, primary, staticLab
        onClick={onClick}
        className={'tlx-material-fab-button ' + (primary ? 'primary' : 'secondary')}>
       <i className="material-icons tlx-fab-bar--icon">{icon}</i>
-      {staticLabel ? <span class="tlx-fab-bar--label">{label}</span> : null}
+      {staticLabel ? <span className="tlx-fab-bar--label">{label}</span> : null}
     </a>
   );
 }
@@ -107,7 +107,7 @@ class FABBarModal extends React.Component {
 
 
     return (
-      [this.props.isModal ? <div class={'tlx-fab-bar-overlay tlx-fab-bar-overlay' + (this.state.open ? '--open' : '--closed')} onClick={openClose}></div> : null,
+      [this.props.isModal ? <div className={'tlx-fab-bar-overlay tlx-fab-bar-overlay' + (this.state.open ? '--open' : '--closed')} onClick={openClose}></div> : null,
       <div className={classes}
            role="toolbar"
            aria-expanded={this.state.open}
